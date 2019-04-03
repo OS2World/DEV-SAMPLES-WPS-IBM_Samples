@@ -1,0 +1,28 @@
+# IBM Developer's Workframe/2 Make File Creation run at 13:22:00 on 08/05/92
+
+# Make File Creation run in directory:
+#   K:\SRC\MICRO;
+
+.SUFFIXES:
+
+.SUFFIXES: .c
+
+micro.dll:  \
+  micro.OBJ \
+  micro.def \
+  MAKEFILE
+   @REM @<<MICRO.@0
+     /NOI +
+     micro.OBJ
+     micro.dll
+     
+     som
+     micro.def;
+<<
+   LINK386.EXE @MICRO.@0
+  IMPLIB micro.LIB micro.def
+
+{.}.c.obj:
+   ICC.EXE /Ss /Ls /Lx /La /Lt"Microcomputer Driver" /Ge- /C .\$*.c
+
+!include MAKEFILE.DEP

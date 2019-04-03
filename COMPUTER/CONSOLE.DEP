@@ -1,0 +1,23 @@
+# IBM Developer's Workframe/2 Make File Creation run at 13:35:10 on 08/05/92
+
+# Make File Creation run in directory:
+#   K:\SRC\MICRO;
+
+# Assumed INCLUDE environment variable path:
+#   K:\SRC\MICRO;
+#   H:\MMOS2\MMTOOLKT\INC;
+#   H:\MMOS2\MMTOOLKT\H;
+#   I:\TOOLKT20\C\OS2H;
+#   I:\TOOLKT20\ASM\OS2INC;
+#   J:\IBMC\INCLUDE;
+#   I:\X11R5\MIT\INCLUDE;
+
+
+console.OBJ:  console.c  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}ctype.h  \
+   {.;$(INCLUDE);}micro.ph  \
+     {.;$(INCLUDE);}micro.h  \
+#      {$(INCLUDE);}som.h  \
+#      {$(INCLUDE);}somobj.h  \
+   CONSOLE.MAK

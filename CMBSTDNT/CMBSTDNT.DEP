@@ -1,0 +1,46 @@
+# IBM Developer's Workframe/2 Make File Creation run at 11:11:54 on 04/23/92
+
+# Make File Creation run in directory:
+#   F:\RANDY\SOM\STUDENT;
+
+# Assumed INCLUDE environment variable path:
+#   F:\RANDY\SOM\STUDENT;
+#   E:\TOOLKT20\C\OS2H;
+#   E:\TOOLKT20\ASM\OS2INC;
+#   E:\IBMC\INCLUDE;
+#   E:\MSC60A\INCLUDE;
+#   E:\IBMCXX\INCLUDE;
+
+CMBSTDNT.OBJ:  CMBSTDNT.C  \
+               {.;$(INCLUDE);}student.h  \
+               {.;$(INCLUDE);}graduate.h  \
+               {.;$(INCLUDE);}undrgrad.h
+
+STUDENT.SC:  STUDENT.CSC
+
+STUDENT.OBJ:  STUDENT.C  \
+   {.;$(INCLUDE);}student.ih  \
+     {.;$(INCLUDE);}student.h
+#      {$(INCLUDE);}som.h  \
+#      {$(INCLUDE);}somobj.h
+
+GRADUATE.SC: GRADUATE.CSC
+
+GRADUATE.OBJ:  GRADUATE.C  \
+   {.;$(INCLUDE);}graduate.ih  \
+     {.;$(INCLUDE);}GRADUATE.h  \
+#      {$(INCLUDE);}som.h  \
+       {$(INCLUDE);}STUDENT.h
+#        {$(INCLUDE);}som.h  \
+#        {$(INCLUDE);}somobj.h  \
+
+UNDRGRAD.SC:  UNDRGRAD.CSC
+
+UNDRGRAD.OBJ:  UNDRGRAD.C  \
+   {.;$(INCLUDE);}undrgrad.ih  \
+     {.;$(INCLUDE);}UNDRGRAD.h  \
+#      {$(INCLUDE);}som.h  \
+       {.;$(INCLUDE);}student.h
+#        {$(INCLUDE);}som.h  \
+#        {$(INCLUDE);}somobj.h  \
+

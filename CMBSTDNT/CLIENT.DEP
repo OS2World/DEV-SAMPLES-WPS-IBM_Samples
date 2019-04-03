@@ -1,0 +1,24 @@
+# IBM Developer's Workframe/2 Make File Creation run at 16:50:31 on 04/12/92
+
+# Make File Creation run in directory:
+#   D:\RANDY\STUDENT;
+
+# Assumed INCLUDE environment variable path:
+#   D:\TOOLKT20\C\OS2H;
+#   D:\TOOLKT20\ASM\OS2INC;
+#   D:\IBMC\INCLUDE;
+
+
+CLIENT.OBJ:  CLIENT.C  \
+   {.;$(INCLUDE);}student.h  \
+#    {$(INCLUDE);}som.h  \
+#    {$(INCLUDE);}somobj.h  \
+#    {$(INCLUDE);}som.h  \
+#    {$(INCLUDE);}somobj.h  \
+   {.;$(INCLUDE);}graduate.h  \
+#    {$(INCLUDE);}som.h  \
+#    {.;$(INCLUDE);}student.h  \
+   {.;$(INCLUDE);}undrgrad.h
+#    {$(INCLUDE);}som.h  \
+#    {.;$(INCLUDE);}student.h  \
+

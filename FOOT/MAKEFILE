@@ -1,0 +1,28 @@
+# IBM Developer's Workframe/2 Make File Creation run at 13:06:42 on 04/20/92
+
+# Make File Creation run in directory:
+#   K:\SRC\WPS\FOOT;
+
+.SUFFIXES:
+
+.SUFFIXES: .c
+
+foot.dll:  \
+  foot.OBJ \
+  foot.def \
+  MAKEFILE
+   @REM @<<FOOT.@0
+     /NOI +
+     foot.OBJ
+     foot.dll
+     
+     som
+     foot.def;
+<<
+   LINK386.EXE @FOOT.@0
+  IMPLIB foot.LIB foot.def
+
+{.}.c.obj:
+   ICC.EXE /Ss /Ge- /C .\$*.c
+
+!include MAKEFILE.DEP

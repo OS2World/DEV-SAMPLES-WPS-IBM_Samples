@@ -1,0 +1,23 @@
+# IBM Developer's Workframe/2 Make File Creation run at 13:06:42 on 04/20/92
+
+# Make File Creation run in directory:
+#   K:\SRC\WPS\FOOT;
+
+# Assumed INCLUDE environment variable path:
+#   I:\TOOLKT20\C\OS2H;
+#   I:\TOOLKT20\ASM\OS2INC;
+#   J:\IBMC\INCLUDE;
+
+
+foot.OBJ:  foot.c  \
+   {.;$(INCLUDE);}foot.ih  \
+#    {$(INCLUDE);}os2.h  \
+     {.;$(INCLUDE);}foot.h  \
+#      {$(INCLUDE);}som.h  \
+       {.;$(INCLUDE);}wpabs.h  \
+#        {$(INCLUDE);}som.h  \
+         {.;$(INCLUDE);}wpobject.h  \
+#          {$(INCLUDE);}pmstddlg.h  \
+#          {$(INCLUDE);}som.h  \
+#          {$(INCLUDE);}somobj.h  \
+   MAKEFILE

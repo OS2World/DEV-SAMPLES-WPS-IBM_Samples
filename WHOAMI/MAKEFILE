@@ -1,0 +1,28 @@
+# IBM Developer's Workframe/2 Make File Creation run at 18:14:33 on 07/15/92
+
+# Make File Creation run in directory:
+#   D:\WPSDEMOS\WHOAMI;
+
+.SUFFIXES:
+
+.SUFFIXES: .c
+
+WHOAMI.DLL:  \
+  WHOAMI.OBJ \
+  whoami.def \
+  MAKEFILE
+   @REM @<<WHOAMI.@0
+     /CO /NOI +
+     WHOAMI.OBJ
+     WHOAMI.DLL
+     
+     som
+     whoami.def;
+<<
+   LINK386.EXE @WHOAMI.@0
+  IMPLIB WHOAMI.LIB whoami.def
+
+{.}.c.obj:
+   ICC.EXE /Ss /Ti /Ge- /C .\$*.c
+
+!include MAKEFILE.DEP
