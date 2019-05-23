@@ -5,7 +5,9 @@ SOM/Workplace Sample code from IBM SOM/WPS class.
 * BSD 3-Clause
 
 ## COMPILE TOOLS
-* SOM Compiler
+* SOM Compiler (sc)
+* LINK386
+* ICC
  
 ## AUTHORS
 * IBM 
