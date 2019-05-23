@@ -8,6 +8,7 @@ SOM/Workplace Sample code from IBM SOM/WPS class.
 * SOM Compiler (sc)
 * LINK386
 * ICC
+* IMPLIB
  
 ## AUTHORS
 * IBM 
